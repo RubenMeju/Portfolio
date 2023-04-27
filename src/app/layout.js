@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react'
-import Header from './api/components/header/Header'
-import NavBar from './api/components/navBar/NavBar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { motion } from 'framer-motion'
+import Header from './components/header/Header'
+import NavBar from './components/navBar/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
