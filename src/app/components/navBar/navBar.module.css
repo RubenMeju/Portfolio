@@ -1,3 +1,21 @@
+.nav {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  width: 75%;
+  height: 100vh;
+  max-width: 20rem;
+  background-color: blue;
+  z-index: 100;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    top: 0;
+    left: 4rem;
+  }
+}
+
 /*
 .nav {
   position: absolute;

@@ -12,12 +12,30 @@
 }
 
 body {
-  /*
+  display: flex;
+  flex-direction: column;
+  perspective: 500px;
+  background-color: rgb(28, 40, 73);
+  overflow: hidden;
+}
+.childrens {
+  width: 100%;
+  background-color: green;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    flex-direction: row;
+  }
+}
+/*
+
+body {
   display: flex;
   perspective: 500px;
   background-color: rgb(28, 40, 73);
   overflow: hidden;
-*/
+
 }
 
 .childrens {
@@ -25,3 +43,4 @@ body {
   margin-left: 4rem;
   background: 'rgb(20, 29, 53)';
 }
+*/

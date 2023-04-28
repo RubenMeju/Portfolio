@@ -15,18 +15,17 @@ export const metadata = {
 
 const variants = {
   open: {
+    backgroundColor: 'violet'
+    /*
     right: 0,
     top: '50%',
     width: '75%',
     height: '80%',
     transform: 'translateY(-50%) rotateY(-5deg)'
-
+*/
     // borderRadius: ['50%', '50%', '50%', '10%', '0%']
   },
-  closed: {
-    width: '100%',
-    height: '100%'
-  }
+  closed: {}
 }
 
 export default function RootLayout({ children }) {
