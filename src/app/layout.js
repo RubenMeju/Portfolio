@@ -33,27 +33,15 @@ export default function RootLayout({ children }) {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <html lang='en'>
-      <body
-        className={inter.className}
-        style={{
-          display: 'flex',
-          overflow: 'hidden',
-          perspective: '500px',
-          background: 'rgb(28, 40, 73)'
-        }}
-      >
+      <body className={inter.className}>
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
         <motion.div
+          className='childrens'
           initial='closed'
           animate={isOpen ? 'open' : 'closed'}
           variants={variants}
           transition={{ duration: 0.3 }}
-          style={{
-            position: 'absolute',
-            marginLeft: '4rem',
-            background: 'rgb(20, 29, 53)'
-          }}
         >
           {children}
         </motion.div>

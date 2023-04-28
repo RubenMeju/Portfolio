@@ -10,3 +10,18 @@
   --color_blue_light: rgb(64, 121, 255);
   --color_white: rgb(255, 255, 255);
 }
+
+body {
+  /*
+  display: flex;
+  perspective: 500px;
+  background-color: rgb(28, 40, 73);
+  overflow: hidden;
+*/
+}
+
+.childrens {
+  position: absolute;
+  margin-left: 4rem;
+  background: 'rgb(20, 29, 53)';
+}
