@@ -15,11 +15,17 @@ export const metadata = {
 
 const variants = {
   open: {
-    x: '24rem'
+    right: 0,
+    top: '50%',
+    width: '75%',
+    height: '80%',
+    transform: 'translateY(-50%) rotateY(-5deg)'
+
     // borderRadius: ['50%', '50%', '50%', '10%', '0%']
   },
   closed: {
-    x: '4rem'
+    width: '100%',
+    height: '100%'
   }
 }
 
@@ -29,7 +35,12 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body
         className={inter.className}
-        style={{ display: 'flex', overflow: 'hidden' }}
+        style={{
+          display: 'flex',
+          overflow: 'hidden',
+          perspective: '500px',
+          background: 'blue'
+        }}
       >
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -40,8 +51,7 @@ export default function RootLayout({ children }) {
           transition={{ duration: 0.5 }}
           style={{
             position: 'absolute',
-            width: '100%',
-            height: '100%',
+            marginLeft: '4rem',
             background: 'red'
           }}
         >

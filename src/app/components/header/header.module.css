@@ -2,7 +2,7 @@
   width: 4rem;
   height: 100vh;
   background-color: rgb(51, 0, 255);
-  z-index: 10;
+  z-index: 200;
 }
 
 .logo {
