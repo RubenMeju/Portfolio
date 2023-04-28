@@ -1,5 +1,3 @@
-import Portfolio from './components/portfolio/Portfolio'
-
 export default function Home() {
-  return <Portfolio />
+  return <h1>Aqui el home</h1>
 }

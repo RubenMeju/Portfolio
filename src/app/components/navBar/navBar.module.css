@@ -7,3 +7,9 @@
   z-index: 100;
   background-color: rgb(37, 52, 95);
 }
+
+.link {
+  color: var(--color_white);
+  list-style: none;
+  text-decoration: none;
+}
