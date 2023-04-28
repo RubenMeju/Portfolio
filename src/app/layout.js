@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           display: 'flex',
           overflow: 'hidden',
           perspective: '500px',
-          background: 'blue'
+          background: 'rgb(28, 40, 73)'
         }}
       >
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -48,11 +48,11 @@ export default function RootLayout({ children }) {
           initial='closed'
           animate={isOpen ? 'open' : 'closed'}
           variants={variants}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           style={{
             position: 'absolute',
             marginLeft: '4rem',
-            background: 'red'
+            background: 'rgb(20, 29, 53)'
           }}
         >
           {children}

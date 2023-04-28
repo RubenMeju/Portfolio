@@ -1,3 +1,5 @@
+import Portfolio from './components/portfolio/Portfolio'
+
 export default function Home() {
-  return <h1>MEJU</h1>
+  return <Portfolio />
 }

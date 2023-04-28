@@ -1,7 +1,7 @@
 .header {
   width: 4rem;
   height: 100vh;
-  background-color: rgb(51, 0, 255);
+  background-color: var(--color_blue);
   z-index: 200;
 }
 
