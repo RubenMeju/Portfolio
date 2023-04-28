@@ -34,7 +34,7 @@ const pages = [
   }
 ]
 
-export default function NavBar({ isOpen }) {
+export default function NavBar({ isOpen, setIsOpen }) {
   console.log('isOpen in navbar', isOpen)
   return (
     <motion.nav
@@ -46,11 +46,14 @@ export default function NavBar({ isOpen }) {
     >
       <ul className={styles.ul}>
         {pages.map((page, index) => (
-          <li key={index} className={styles.li}>
-            <Link href={page.path} className={styles.link}>
-              {page.name}
-            </Link>
-          </li>
+          <Link
+            href={page.path}
+            key={index}
+            className={styles.link}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <li className={styles.li}>{page.name}</li>
+          </Link>
         ))}
       </ul>
     </motion.nav>
