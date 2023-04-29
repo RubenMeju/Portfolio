@@ -8,7 +8,7 @@ import imgProfile from '../../public/SonGoku.webp'
 export default function Home() {
   return (
     <div className={styles.home}>
-      <h1>homeeee</h1>
+      <h1>Meju</h1>
       {/*
 
       <div className={styles.container}>

@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import styles from './navBar.module.css'
-import Link from 'next/link'
+import NavItems from './navItems/NavItems'
 
 const variants = {
   open: {
@@ -16,25 +16,6 @@ const variants = {
   }
 }
 
-const pages = [
-  {
-    name: 'Home',
-    path: '/'
-  },
-  {
-    name: 'Projects',
-    path: '/projects'
-  },
-  {
-    name: 'Contact',
-    path: '/contact'
-  },
-  {
-    name: 'About',
-    path: '/about'
-  }
-]
-
 export default function NavBar({ isOpen, setIsOpen }) {
   console.log('isOpen in navbar', isOpen)
   return (
@@ -45,18 +26,7 @@ export default function NavBar({ isOpen, setIsOpen }) {
       transition={{ duration: 0.3 }}
       className={styles.nav}
     >
-      <ul className={styles.ul}>
-        {pages.map((page, index) => (
-          <Link
-            href={page.path}
-            key={index}
-            className={styles.link}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <li className={styles.li}>{page.name}</li>
-          </Link>
-        ))}
-      </ul>
+      <NavItems isOpen={isOpen} setIsOpen={setIsOpen} />
     </motion.nav>
   )
 }
