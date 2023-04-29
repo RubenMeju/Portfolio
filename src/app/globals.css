@@ -12,20 +12,30 @@
 }
 
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  perspective: 500px;
   background-color: rgb(28, 40, 73);
   overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .childrens {
   width: 100%;
   background-color: green;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) {
   body {
     flex-direction: row;
+  }
+  .container {
+    perspective: 500px;
   }
 }
 /*

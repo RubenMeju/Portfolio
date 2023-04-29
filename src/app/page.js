@@ -8,6 +8,9 @@ import imgProfile from '../../public/SonGoku.webp'
 export default function Home() {
   return (
     <div className={styles.home}>
+      <h1>homeeee</h1>
+      {/*
+
       <div className={styles.container}>
         <div className={styles.description}>
           <h1>
@@ -32,6 +35,7 @@ export default function Home() {
           />
         </div>
       </div>
+  */}
     </div>
   )
 }

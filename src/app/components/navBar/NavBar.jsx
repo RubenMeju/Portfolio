@@ -5,12 +5,13 @@ import Link from 'next/link'
 
 const variants = {
   open: {
-    opacity: 1,
-    x: 0
+    x: 0,
+    width: '100%'
     // borderRadius: ['50%', '50%', '50%', '10%', '0%']
   },
   closed: {
-    opacity: 0,
+    width: 0,
+
     x: '-100%'
   }
 }
@@ -41,7 +42,7 @@ export default function NavBar({ isOpen, setIsOpen }) {
       initial='closed'
       animate={isOpen ? 'open' : 'closed'}
       variants={variants}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
       className={styles.nav}
     >
       <ul className={styles.ul}>
