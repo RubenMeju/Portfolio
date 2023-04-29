@@ -11,6 +11,7 @@
   list-style: none;
   cursor: pointer;
   background-color: var(--color_blue_light);
+  overflow: hidden;
 }
 
 .link {

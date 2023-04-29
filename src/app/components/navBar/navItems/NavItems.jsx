@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from './navItems.module.css'
+import { motion } from 'framer-motion'
 
 const pages = [
   {
@@ -20,11 +21,29 @@ const pages = [
   }
 ]
 
+const variants = {
+  open: {
+    x: 0,
+    width: '100%'
+  },
+  closed: {
+    width: 0,
+    x: '-100%'
+  }
+}
+
 export default function NavItems({ isOpen, setIsOpen }) {
   return (
     <ul className={styles.ul}>
       {pages.map((page, index) => (
-        <li key={index} className={styles.li}>
+        <motion.li
+          key={index}
+          className={styles.li}
+          initial='closed'
+          animate={isOpen ? 'open' : 'closed'}
+          variants={variants}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+        >
           <Link
             href={page.path}
             className={styles.link}
@@ -32,7 +51,7 @@ export default function NavItems({ isOpen, setIsOpen }) {
           >
             {page.name}
           </Link>
-        </li>
+        </motion.li>
       ))}
     </ul>
   )
