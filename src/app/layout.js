@@ -33,7 +33,8 @@ export default function RootLayout({ children }) {
     : {
         open: {
           height: '90%',
-          transform: ' rotateY(-15deg)'
+          transform: 'translateZ(-100px) rotateY(-15deg)'
+
           // backgroundColor: 'orange'
         },
         closed: {

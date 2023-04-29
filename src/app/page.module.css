@@ -1,23 +1,27 @@
 .home {
   position: relative;
   width: 90%;
+  min-width: 350px;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
-
+.header {
+}
 .contImg {
   position: relative;
 
   width: 250px;
   height: 250px;
+
   margin: auto;
   margin-top: 50px;
   margin-bottom: 30px;
   border-radius: 50%;
   overflow: hidden;
 }
-
+.body {
+}
 .textIntro {
   color: aliceblue;
 }
@@ -44,8 +48,9 @@
 
 @media screen and (min-width: 1024px) {
   .home {
-    width: 75%;
+    width: 50%;
     height: 100%;
+
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
