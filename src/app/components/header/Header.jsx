@@ -10,7 +10,9 @@ export default function Header({ isOpen, setIsOpen }) {
   return (
     <header className={styles.header}>
       <span className={styles.logo}>R</span>
-      <ButtonBars isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div className={styles.containerButton}>
+        <ButtonBars isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
       <div className={styles.socialIcons}>
         <Image src={iconGithub} className={styles.img} alt='Github' />
         <Image src={iconLinkedin} className={styles.img} alt='Linkedin' />
