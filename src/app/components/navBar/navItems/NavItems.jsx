@@ -24,14 +24,15 @@ export default function NavItems({ isOpen, setIsOpen }) {
   return (
     <ul className={styles.ul}>
       {pages.map((page, index) => (
-        <Link
-          href={page.path}
-          key={index}
-          className={styles.link}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <li className={styles.li}>{page.name}</li>
-        </Link>
+        <li key={index} className={styles.li}>
+          <Link
+            href={page.path}
+            className={styles.link}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {page.name}
+          </Link>
+        </li>
       ))}
     </ul>
   )
