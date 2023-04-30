@@ -11,6 +11,11 @@
   --color_white: rgb(255, 255, 255);
 }
 
+.image {
+  object-fit: cover;
+}
+/**/
+
 body {
   width: 100%;
   display: flex;
