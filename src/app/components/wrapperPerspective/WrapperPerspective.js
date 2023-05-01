@@ -3,8 +3,7 @@ import { motion } from 'framer-motion'
 const variants = {
   open: {
     // height: '90%',
-    transform: 'translateZ(-100px) rotateY(-15deg)',
-    backgroundColor: 'green'
+    transform: 'translateZ(-100px) rotateY(-15deg)'
   },
   closed: {}
 }

@@ -16,7 +16,7 @@
 }
 
 body {
-  background: #ea00ea;
+  background-color: var(--color_blue_dark);
 }
 .contChildrens {
   position: fixed;
@@ -25,7 +25,10 @@ body {
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
-  background: red;
+  background-color: green;
+}
+.children {
+  background-color: brown;
 }
 
 @media screen and (min-width: 768px) {
