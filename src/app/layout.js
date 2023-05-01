@@ -2,10 +2,10 @@
 import { useState } from 'react'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { motion } from 'framer-motion'
 import Header from './components/header/Header'
 import NavBar from './components/navBar/NavBar'
-import { useMediaQuery } from './hooks/useMediaQuery'
+import { WrapperAnimated } from './components/wrapperAnimated/WrapperAnimated'
+import { WrapperPerspective } from './components/wrapperPerspective/WrapperPerspective'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,34 +16,6 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const [isOpen, setIsOpen] = useState(false)
-  const isSmall = useMediaQuery('(max-width: 1024px)')
-
-  const variants = isSmall
-    ? {
-        open: {
-          left: '80%'
-          //  x: '80%'
-          // transform: ' translateX(80%) rotateY(-5deg)'
-        },
-
-        closed: {
-          left: '0%'
-          // x: 0
-        }
-      }
-    : {
-        open: {
-          top: '50%',
-          width: '60%',
-          height: '90%',
-          transform: 'translateY(-50%) translateZ(-100px) rotateY(-15deg)',
-          backgroundColor: 'orange',
-          overflow: 'hidden'
-        },
-        closed: {
-          height: '100%'
-        }
-      }
 
   return (
     <html lang='en'>
@@ -51,15 +23,9 @@ export default function RootLayout({ children }) {
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        <motion.div
-          className='childrens'
-          initial='closed'
-          animate={isOpen ? 'open' : 'closed'}
-          variants={variants}
-          transition={{ duration: 0.3 }}
-        >
-          {children}
-        </motion.div>
+        <WrapperAnimated isOpen={isOpen}>
+          <WrapperPerspective isOpen={isOpen}>{children}</WrapperPerspective>
+        </WrapperAnimated>
       </body>
     </html>
   )

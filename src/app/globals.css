@@ -18,19 +18,19 @@
 body {
   background: #ea00ea;
 }
-
-.childrens {
+.contChildrens {
   position: fixed;
   top: 4rem;
+  left: 0;
   width: 100%;
-  background: red;
+  height: calc(100vh - 4rem);
   overflow-y: scroll;
 }
 
-@media screen and (min-width: 1024px) {
-  .childrens {
+@media screen and (min-width: 768px) {
+  .contChildrens {
     top: 0;
-    right: 0;
-    width: calc(100% - 4rem);
+    left: 4rem;
+    perspective: 500px;
   }
 }
