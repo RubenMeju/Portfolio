@@ -7,16 +7,18 @@
   background-color: var(--color_blue_light);
 }
 .title {
-  width: 90%;
+  width: 75%;
   margin: auto;
   color: aliceblue;
+  font-size: 2.5rem;
 }
 
 .body {
-  width: 90%;
+  width: 75%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
+  z-index: 5555;
 }
