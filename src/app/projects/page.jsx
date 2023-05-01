@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import styles from './projects.module.css'
 import imagen from '../../../public/SonGoku.webp'
+import Card from '../components/card/Card'
 
 const projects = [
   {
@@ -45,24 +45,11 @@ export default function Portfolio() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>Fullstack Web Developer Portfolio</h1>
+        <h1 className={styles.title}>Fullstack Web Developer Portfolio</h1>
       </div>
       <div className={styles.body}>
         {projects.map((project, index) => (
-          <div key={index} className={styles.card}>
-            <div className={styles.cardHeader}>
-              <Image
-                src={project.image}
-                alt={project.title}
-                className='image'
-                fill
-              />
-            </div>
-            <div className={styles.cardBody}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-            </div>
-          </div>
+          <Card key={index} project={project} />
         ))}
       </div>
     </div>
