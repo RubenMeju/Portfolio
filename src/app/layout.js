@@ -21,24 +21,26 @@ export default function RootLayout({ children }) {
   const variants = isSmall
     ? {
         open: {
-          width: '20%',
-          transform: ' rotateY(-5deg)'
+          left: '80%'
+          //  x: '80%'
+          // transform: ' translateX(80%) rotateY(-5deg)'
         },
 
         closed: {
-          width: '100%',
-          height: '100%'
+          left: '0%'
+          // x: 0
         }
       }
     : {
         open: {
+          top: '50%',
+          width: '60%',
           height: '90%',
-          transform: 'translateZ(-100px) rotateY(-15deg)'
-
-          // backgroundColor: 'orange'
+          transform: 'translateY(-50%) translateZ(-100px) rotateY(-15deg)',
+          backgroundColor: 'orange',
+          overflow: 'hidden'
         },
         closed: {
-          width: '100%',
           height: '100%'
         }
       }
@@ -47,18 +49,17 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={inter.className}>
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-        <div className='container'>
-          <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
-          <motion.div
-            className='childrens'
-            initial='closed'
-            animate={isOpen ? 'open' : 'closed'}
-            variants={variants}
-            transition={{ duration: 0.3 }}
-          >
-            {children}
-          </motion.div>
-        </div>
+        <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
+
+        <motion.div
+          className='childrens'
+          initial='closed'
+          animate={isOpen ? 'open' : 'closed'}
+          variants={variants}
+          transition={{ duration: 0.3 }}
+        >
+          {children}
+        </motion.div>
       </body>
     </html>
   )

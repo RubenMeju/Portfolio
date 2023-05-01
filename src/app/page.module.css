@@ -1,12 +1,9 @@
 .home {
-  position: relative;
   width: 90%;
   min-width: 350px;
   margin: auto;
   display: flex;
   flex-direction: column;
-}
-.header {
 }
 .contImg {
   position: relative;
@@ -20,8 +17,7 @@
   border-radius: 50%;
   overflow: hidden;
 }
-.body {
-}
+
 .textIntro {
   color: aliceblue;
 }

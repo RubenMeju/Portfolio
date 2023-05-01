@@ -1,7 +1,17 @@
 .nav {
-  width: 90%;
-  height: 100%;
+  position: fixed;
+  top: 4rem;
+  left: 0rem;
+  height: calc(100vh - 4rem);
   max-width: 20rem;
   background-color: var(--color_blue_dark);
   overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    top: 0;
+    left: 4rem;
+    height: 100%;
+  }
 }
