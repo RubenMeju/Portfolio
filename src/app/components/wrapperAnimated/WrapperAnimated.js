@@ -2,7 +2,7 @@ import { useMediaQuery } from '@/app/hooks/useMediaQuery'
 import { motion } from 'framer-motion'
 
 export const WrapperAnimated = ({ children, isOpen }) => {
-  const isSmall = useMediaQuery('(max-width: 1024px)')
+  const isSmall = useMediaQuery('(max-width: 820px)')
 
   const variants = isSmall
     ? {
