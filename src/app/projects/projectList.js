@@ -1,4 +1,5 @@
-import imgTetris from '../../../public/tetris.jpg'
+import imgTetris from '../../../public/projectsImages/tetris.jpg'
+import imgMovies from '../../../public/projectsImages/moviesAPI.png'
 import imagen from '../../../public/SonGoku.webp'
 
 export const projects = [
@@ -6,13 +7,13 @@ export const projects = [
     title: 'Tetris',
     description: 'El juego de tetris',
     image: imgTetris,
-    link: 'https://github.com/RubenMeju/TetrisReduxToolkit/blob/main/tetris.png?raw=true'
+    link: 'https://tetris-redux-toolkit.vercel.app/'
   },
   {
-    title: 'Project 2',
-    description: 'This is a project',
-    image: imagen,
-    link: 'https://www.google.com'
+    title: 'Movies API',
+    description: 'API de peliculas',
+    image: imgMovies,
+    link: 'https://movies-api-tmdb.vercel.app/'
   },
   {
     title: 'Project 3',
