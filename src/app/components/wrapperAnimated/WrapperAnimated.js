@@ -7,7 +7,7 @@ export const WrapperAnimated = ({ children, isOpen }) => {
   const variants = isSmall
     ? {
         open: {
-          x: '80%'
+          x: '40%'
         },
 
         closed: {

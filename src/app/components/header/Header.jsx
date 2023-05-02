@@ -6,7 +6,6 @@ import iconLinkedin from '../../../../public/linkedin.svg'
 import { ButtonBars } from '../btnBars/ButtonBars'
 
 export default function Header({ isOpen, setIsOpen }) {
-  console.log('isOpen', isOpen)
   return (
     <header className={styles.header}>
       <span className={styles.logo}>R</span>
