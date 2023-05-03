@@ -12,20 +12,28 @@ export default function DetailsContact() {
       <ul className={styles.ul}>
         <li className={styles.li}>
           Email:
-          <a href='#' className={styles.a}>
+          <a href='mailto:rubenmeju@outlook.es' className={styles.a}>
             Rubenmeju@outlook.es
           </a>
         </li>
         <li className={styles.li}>
           LinkedIn:
-          <a href='#' className={styles.a}>
-            Rubenmeju@outlook.es
+          <a
+            href='https://www.linkedin.com/in/rub%C3%A9n-y%C3%A1%C3%B1ez-bb12b71bb/'
+            target='_blank'
+            className={styles.a}
+          >
+            Rubenmeju
           </a>
         </li>
         <li className={styles.li}>
           GitHub:
-          <a href='#' className={styles.a}>
-            Rubenmeju@outlook.es
+          <a
+            href='https://github.com/RubenMeju'
+            target='_blank'
+            className={styles.a}
+          >
+            Rubenmeju
           </a>
         </li>
       </ul>
