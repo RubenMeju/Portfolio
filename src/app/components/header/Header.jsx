@@ -4,13 +4,16 @@ import Image from 'next/image'
 import iconGithub from '../../../../public/github.svg'
 import iconLinkedin from '../../../../public/linkedin.svg'
 import { ButtonBars } from '../btnBars/ButtonBars'
+import { useContext } from 'react'
+import { AnimationContext } from '@/app/store/AnimationProvider'
 
-export default function Header({ isOpen, setIsOpen }) {
+export default function Header() {
+  const { isOpen, setIsOpen } = useContext(AnimationContext)
   return (
     <header className={styles.header}>
       <span className={styles.logo}>R</span>
       <div className={styles.containerButton}>
-        <ButtonBars isOpen={isOpen} setIsOpen={setIsOpen} />
+        <ButtonBars />
       </div>
       <div className={styles.socialIcons}>
         <a href='https://github.com/RubenMeju' target='_blank'>

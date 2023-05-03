@@ -1,7 +1,13 @@
-import { useMediaQuery } from '@/app/hooks/useMediaQuery'
-import { motion } from 'framer-motion'
+'use client'
 
-export const WrapperAnimated = ({ children, isOpen }) => {
+import { useMediaQuery } from '@/app/hooks/useMediaQuery'
+import { AnimationContext } from '@/app/store/AnimationProvider'
+import { motion } from 'framer-motion'
+import { useContext } from 'react'
+
+export const WrapperAnimated = ({ children }) => {
+  const { isOpen } = useContext(AnimationContext)
+
   const isSmall = useMediaQuery('(max-width: 820px)')
 
   const variants = isSmall

@@ -1,4 +1,7 @@
+'use client'
+import { AnimationContext } from '@/app/store/AnimationProvider'
 import { motion } from 'framer-motion'
+import { useContext } from 'react'
 
 const variants = {
   open: {
@@ -8,7 +11,9 @@ const variants = {
   closed: {}
 }
 
-export const WrapperPerspective = ({ children, isOpen }) => {
+export const WrapperPerspective = ({ children }) => {
+  const { isOpen } = useContext(AnimationContext)
+
   return (
     <motion.div
       initial='closed'

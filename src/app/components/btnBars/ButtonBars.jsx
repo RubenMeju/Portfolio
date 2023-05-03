@@ -1,5 +1,8 @@
+'use client'
 import { motion } from 'framer-motion'
 import StylesButtonBars from './buttonBars.module.css'
+import { useContext } from 'react'
+import { AnimationContext } from '@/app/store/AnimationProvider'
 
 const Path = (props) => (
   <motion.path
@@ -11,7 +14,9 @@ const Path = (props) => (
   />
 )
 
-export const ButtonBars = ({ isOpen, setIsOpen }) => {
+export const ButtonBars = () => {
+  const { isOpen, setIsOpen } = useContext(AnimationContext)
+
   const colorIconBars = 'aliceblue'
   return (
     <motion.button
@@ -19,7 +24,9 @@ export const ButtonBars = ({ isOpen, setIsOpen }) => {
       animate={isOpen ? 'open' : 'closed'}
       type='button'
       className={StylesButtonBars.motionButton}
-      onClick={() => setIsOpen(!isOpen)}
+      onClick={() => {
+        setIsOpen(!isOpen)
+      }}
     >
       <svg viewBox='0 0 24 24'>
         <Path

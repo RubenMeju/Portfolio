@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion'
 import styles from './navBar.module.css'
 import NavItems from './navItems/NavItems'
+import { useContext } from 'react'
+import { AnimationContext } from '@/app/store/AnimationProvider'
 
 const variants = {
   open: {
@@ -16,7 +18,9 @@ const variants = {
   }
 }
 
-export default function NavBar({ isOpen, setIsOpen }) {
+export default function NavBar() {
+  const { isOpen } = useContext(AnimationContext)
+
   console.log('isOpen in navbar', isOpen)
   return (
     <motion.nav
@@ -26,7 +30,7 @@ export default function NavBar({ isOpen, setIsOpen }) {
       transition={{ duration: 0.3 }}
       className={styles.nav}
     >
-      <NavItems isOpen={isOpen} setIsOpen={setIsOpen} />
+      <NavItems />
     </motion.nav>
   )
 }
