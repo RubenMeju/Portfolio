@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@emailjs/browser': ^3.11.0
   eslint: 8.39.0
   eslint-config-next: 13.3.1
   framer-motion: ^10.12.4
@@ -9,6 +10,7 @@ specifiers:
   react-dom: 18.2.0
 
 dependencies:
+  '@emailjs/browser': 3.11.0
   eslint: 8.39.0
   eslint-config-next: 13.3.1_eslint@8.39.0
   framer-motion: 10.12.4_biqbaboplfbrettd7655fr4n2y
@@ -23,6 +25,11 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@emailjs/browser/3.11.0:
+    resolution: {integrity: sha512-RkY3FKZ3fPdK++OeF46mRTFpmmQWCHUVHZH209P3NE4D5sg2Atg7S2wa3gw5062Gl4clt4Wn5SyC4WhlVZC5pA==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@emotion/is-prop-valid/0.8.8:
