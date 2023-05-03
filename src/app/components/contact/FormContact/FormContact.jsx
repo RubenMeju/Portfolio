@@ -49,7 +49,7 @@ export const FormContact = () => {
         name='message'
         placeholder='Enter your message'
       />
-      <button className={styles.buttonSubmit} type='submit'>
+      <button className={styles.btn} type='submit'>
         Send
       </button>
     </form>

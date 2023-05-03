@@ -17,17 +17,23 @@
   .container {
     flex-direction: row;
     justify-content: center;
-    background-color: green;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .contact {
+    position: relative;
     width: 70%;
     height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
 }

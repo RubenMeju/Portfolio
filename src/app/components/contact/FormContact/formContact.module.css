@@ -20,12 +20,36 @@
   background-color: var(--color_blue_light);
 }
 
-.buttonSubmit {
-  width: 200px;
-  margin-top: 1.5rem;
+.btn::before,
+.btn::after {
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  position: relative;
+  width: 15rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid orange;
   font-size: 2rem;
+  background-size: 300%;
+  transition: all 0.6s;
+  color: orange;
   background-color: transparent;
-  color: var(--color_white);
-  border: 1px solid var(--color_white);
-  cursor: pointer;
+  background-image: linear-gradient(160deg, transparent 50%, orange 50%);
+}
+.btn:hover {
+  color: #fff;
+  background-position: 100%;
+  transform: translateX(0.5rem);
+}
+
+.btn:active {
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
 }
