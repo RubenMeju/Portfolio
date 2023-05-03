@@ -5,7 +5,7 @@ import { technologies } from './technologies'
 export default function page() {
   return (
     <div className={styles.about}>
-      <section className={styles.section1}>
+      <div className={styles.section1}>
         <h1 className={styles.title}>About Rubén Yañez</h1>
         <p className={styles.p}>
           I am a 27 years old passionate
@@ -15,8 +15,8 @@ export default function page() {
           mobile applications with a stronger focus on the frontend
           technologies.
         </p>
-      </section>
-      <section className={styles.section2}>
+      </div>
+      <div className={styles.section2}>
         <h2 className={styles.title}>Most used technologies</h2>
         <ul className={styles.ul}>
           {technologies.map((technology) => (
@@ -31,7 +31,7 @@ export default function page() {
             </li>
           ))}
         </ul>
-      </section>
+      </div>
     </div>
   )
 }
