@@ -24,8 +24,9 @@ export default function Home() {
       <div className={styles.body}>
         <div>
           <h1 className={styles.textIntro}>
-            Hey there, my name is Rubén Yáñez. I am a Fullstack Web Developer
-            based in La Coruña, Spain.
+            Hey there,
+            <br /> my name is Rubén Yáñez. I am a Fullstack Web Developer based
+            in La Coruña, Spain.
           </h1>
           <h3 className={styles.textDescription}>
             I am a self-taught developer with a passion for learning new things

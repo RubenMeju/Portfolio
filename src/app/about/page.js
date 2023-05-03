@@ -4,7 +4,7 @@ import { technologies } from './technologies'
 
 export default function page() {
   return (
-    <div>
+    <div className={styles.about}>
       <section className={styles.section1}>
         <h1 className={styles.title}>About Rubén Yañez</h1>
         <p className={styles.p}>
