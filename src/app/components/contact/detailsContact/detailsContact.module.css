@@ -1,0 +1,22 @@
+.section {
+  max-width: 400px;
+}
+.subTitle,
+.p {
+  margin-top: 1rem;
+  color: var(--color_white);
+}
+.ul {
+  padding: 1rem;
+  padding-left: 2rem;
+}
+.p,
+.li {
+  color: var(--color_gray);
+}
+.li {
+  margin: 0.5rem;
+}
+.a {
+  color: orange;
+}

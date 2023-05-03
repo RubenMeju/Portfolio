@@ -1,5 +1,6 @@
 .form {
   width: 100%;
+  max-width: 400px;
   display: flex;
 
   flex-direction: column;
@@ -11,19 +12,20 @@
 }
 
 .input {
-  border-radius: 0.5rem;
-  border: 1px solid color var(--color_gray);
+  margin-top: 4px;
   padding: 0.5rem;
   outline: none;
+  border: 1px solid white;
   color: var(--color_white);
   background-color: var(--color_blue_light);
 }
 
-.inputSubmit {
-  margin: 1rem;
-  padding: 0.5rem;
-  color: var(--color_white);
+.buttonSubmit {
+  width: 200px;
+  margin-top: 1.5rem;
   font-size: 2rem;
-  background-color: green;
+  background-color: transparent;
+  color: var(--color_white);
+  border: 1px solid var(--color_white);
   cursor: pointer;
 }
