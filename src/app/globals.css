@@ -8,7 +8,8 @@
   --color_blue_dark: rgb(28, 40, 73);
   --color_blue: rgb(40, 57, 104);
   --color_blue_light: rgb(44, 64, 122);
-  --color_white: rgb(255, 255, 255);
+  --color_white: #f0f8ff;
+  --color_gray: #c3c3c3;
 }
 
 body {

@@ -1,6 +1,5 @@
 .form {
-  width: 80%;
-  margin: auto;
+  width: 100%;
   display: flex;
 
   flex-direction: column;
@@ -8,22 +7,22 @@
 
 .label {
   margin-top: 1.5rem;
-  color: aliceblue;
+  color: var(--color_white);
 }
 
 .input {
   border-radius: 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid color var(--color_gray);
   padding: 0.5rem;
   outline: none;
-  color: aliceblue;
+  color: var(--color_white);
   background-color: var(--color_blue_light);
 }
 
 .inputSubmit {
   margin: 1rem;
   padding: 0.5rem;
-  color: aliceblue;
+  color: var(--color_white);
   font-size: 2rem;
   background-color: green;
   cursor: pointer;
