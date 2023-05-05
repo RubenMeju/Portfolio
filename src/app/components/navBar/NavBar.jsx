@@ -21,7 +21,6 @@ const variants = {
 export default function NavBar() {
   const { isOpen } = useContext(AnimationContext)
 
-  console.log('isOpen in navbar', isOpen)
   return (
     <motion.nav
       initial='closed'
