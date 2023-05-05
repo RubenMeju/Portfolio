@@ -8,7 +8,7 @@ export default function page() {
       <div className={styles.section1}>
         <h1 className={styles.title}>About Rubén Yañez</h1>
         <p className={styles.p}>
-          I am a 27 years old passionate
+          I am a 36 years old passionate
           <strong className={styles.strong}> Fullstack Web Developer </strong>
           based in La Coruña, Spain who enjoys building software. Very positive
           and highly motivated person in building beautiful websites, web and
