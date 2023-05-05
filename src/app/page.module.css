@@ -15,8 +15,8 @@
 }
 .contImage {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -42,16 +42,6 @@
   width: 100%;
 }
 
-.link {
-  margin-bottom: 1rem;
-  margin-right: 2rem;
-  padding: 10px 20px;
-  color: greenyellow;
-  text-decoration: none;
-  font-size: 1.5rem;
-  border: 2px solid greenyellow;
-}
-
 @media screen and (min-width: 820px) {
   .container {
     width: 70%;
@@ -59,7 +49,14 @@
     flex-direction: row-reverse;
   }
 
+  .header,
   .body {
-    height: 40%;
+    height: 60%;
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

@@ -20,7 +20,7 @@
   align-items: center;
   text-decoration: none;
   font-size: 1.5rem;
-  border-bottom: 2px solid rgba(23, 162, 204, 0.5);
+  border-bottom: 2px solid var(--color_border_blue);
   color: var(--color_white);
 }
 
@@ -31,7 +31,7 @@
   display: inline;
   width: 0;
   height: 2px;
-  background: rgba(23, 162, 204, 1);
+  background: var(--color_border_blue_light);
   transition: width 0.3s;
 }
 

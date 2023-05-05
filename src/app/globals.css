@@ -10,6 +10,9 @@
   --color_blue_light: rgb(44, 64, 122);
   --color_white: #f0f8ff;
   --color_gray: #c3c3c3;
+
+  --color_border_blue_light: rgb(2, 196, 255);
+  --color_border_blue: rgb(114, 222, 255);
 }
 
 body {
@@ -22,6 +25,43 @@ body {
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
+}
+
+.btn::before,
+.btn::after {
+  padding: 0;
+  margin: 0;
+}
+.btn {
+  position: relative;
+  max-width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid orange;
+  font-size: 2rem;
+  background-size: 300%;
+  transition: all 0.6s;
+  color: orange;
+  background-color: transparent;
+  background-image: linear-gradient(160deg, transparent 50%, orange 50%);
+}
+.btn:hover {
+  color: #fff;
+  background-position: 100%;
+  transform: translateX(0.5rem);
+}
+
+.btn:active {
+  transform: translate(0.5rem, 0.5rem);
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (min-width: 820px) {
