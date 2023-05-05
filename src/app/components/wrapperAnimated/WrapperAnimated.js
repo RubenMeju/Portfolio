@@ -23,10 +23,10 @@ export const WrapperAnimated = ({ children }) => {
       }
     : {
         open: {
-          //  overflow: 'hidden'
+          overflow: 'hidden'
         },
         closed: {
-          // overflowX: 'hidden'
+          overflowX: 'hidden'
         }
       }
 
