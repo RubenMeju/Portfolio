@@ -5,7 +5,7 @@ import { projects } from './projectList'
 
 export default function Portfolio() {
   return (
-    <div className={styles.container}>
+    <div>
       <div className={styles.header}>
         <h1 className={styles.title}>Fullstack Web Developer Portfolio</h1>
       </div>

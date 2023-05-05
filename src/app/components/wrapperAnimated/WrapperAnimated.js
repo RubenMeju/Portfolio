@@ -4,6 +4,7 @@ import { useMediaQuery } from '@/app/hooks/useMediaQuery'
 import { AnimationContext } from '@/app/store/AnimationProvider'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
+import styles from './wrapperAnimated.module.css'
 
 export const WrapperAnimated = ({ children }) => {
   const { isOpen } = useContext(AnimationContext)
@@ -29,11 +30,11 @@ export const WrapperAnimated = ({ children }) => {
 
   return (
     <motion.div
-      className='contChildrens'
       initial='closed'
       animate={isOpen ? 'open' : 'closed'}
       variants={variants}
       transition={{ duration: 0.3 }}
+      className={styles.wrapperAnimated}
     >
       {children}
     </motion.div>
