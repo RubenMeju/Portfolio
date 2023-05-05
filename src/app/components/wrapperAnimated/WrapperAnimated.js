@@ -14,7 +14,7 @@ export const WrapperAnimated = ({ children }) => {
   const variants = isSmall
     ? {
         open: {
-          x: '40%'
+          x: '80%'
         },
 
         closed: {
@@ -23,9 +23,11 @@ export const WrapperAnimated = ({ children }) => {
       }
     : {
         open: {
-          overflow: 'hidden'
+          //  overflow: 'hidden'
         },
-        closed: { overflowX: 'hidden' }
+        closed: {
+          // overflowX: 'hidden'
+        }
       }
 
   return (

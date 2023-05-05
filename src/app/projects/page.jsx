@@ -5,7 +5,7 @@ import { projects } from './projectList'
 
 export default function Portfolio() {
   return (
-    <div>
+    <>
       <div className={styles.header}>
         <h1 className={styles.title}>Fullstack Web Developer Portfolio</h1>
       </div>
@@ -14,6 +14,6 @@ export default function Portfolio() {
           <Card key={index} project={project} />
         ))}
       </div>
-    </div>
+    </>
   )
 }

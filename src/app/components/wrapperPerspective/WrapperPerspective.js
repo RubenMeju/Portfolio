@@ -5,7 +5,6 @@ import { useContext } from 'react'
 
 const variants = {
   open: {
-    // height: '90%',
     backgroundColor: 'rgb(40, 57, 104)',
     transform: 'translateZ(-100px) rotateY(-15deg)'
   },
