@@ -8,7 +8,6 @@ const Path = (props) => (
   <motion.path
     fill='transparent'
     strokeWidth='3'
-    stroke='#fff'
     strokeLinecap='round'
     {...props}
   />
@@ -17,7 +16,7 @@ const Path = (props) => (
 export const ButtonBars = () => {
   const { isOpen, setIsOpen } = useContext(AnimationContext)
 
-  const colorIconBars = 'aliceblue'
+  const colorIconBars = '#fff'
   return (
     <motion.button
       initial={false}
