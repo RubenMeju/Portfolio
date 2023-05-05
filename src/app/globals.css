@@ -12,7 +12,7 @@
   --color_gray: #c3c3c3;
 
   --color_border_blue_light: rgb(2, 196, 255);
-  --color_border_blue: rgb(114, 222, 255);
+  --color_border_blue: orange;
 }
 
 body {
