@@ -6,12 +6,15 @@ import iconLinkedin from '../../../../public/linkedin.svg'
 import { ButtonBars } from '../btnBars/ButtonBars'
 import { useContext } from 'react'
 import { AnimationContext } from '@/app/store/AnimationProvider'
+import Link from 'next/link'
 
 export default function Header() {
   const { isOpen, setIsOpen } = useContext(AnimationContext)
   return (
     <header className={styles.header}>
-      <span className={styles.logo}>R</span>
+      <Link href='/' className={styles.logo}>
+        R
+      </Link>
       <div className={styles.containerButton}>
         <ButtonBars />
       </div>
