@@ -6,9 +6,11 @@ import { useContext } from 'react'
 const variants = {
   open: {
     backgroundColor: 'rgb(40, 57, 104)',
+    height: '100vh',
+    overflow: 'hidden',
     transform: 'translateZ(-100px) rotateY(-15deg)'
   },
-  closed: {}
+  closed: { height: 'inherit' }
 }
 
 export const WrapperPerspective = ({ children }) => {
