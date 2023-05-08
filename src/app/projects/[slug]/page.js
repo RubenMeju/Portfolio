@@ -63,7 +63,7 @@ export default function Page({ params }) {
           </a>
         </div>
         <div>
-          <h1>Let's get in touch</h1>
+          <h1>Let`s get in touch</h1>
           <p>Do you have an interesting project I can help with?</p>
           <p>Feel free to reach out to me!</p>
         </div>
