@@ -26,7 +26,7 @@ export default function Page({ params }) {
   } = project
 
   return (
-    <div style={{ color: 'aliceblue' }}>
+    <div style={{ color: 'aliceblue', marginBottom: '4rem' }}>
       <div className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.subTitle}>{subTitle}</p>
