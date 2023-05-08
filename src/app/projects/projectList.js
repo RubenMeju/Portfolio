@@ -1,5 +1,7 @@
-import imgTetris from '../../../public/projectsImages/tetris.jpg'
-import imgMovies from '../../../public/projectsImages/moviesAPI.png'
+import imgTetris from '../../../public/projectsImages/tetris.webp'
+import imgMovies from '../../../public/projectsImages/moviesAPI.webp'
+import imgPortfolio from '../../../public/projectsImages/portfolio.webp'
+
 import imagen from '../../../public/SonGoku.webp'
 
 export const projects = [
@@ -26,10 +28,15 @@ export const projects = [
     url_github: 'https://github.com/RubenMeju/Movies_API_TMDB'
   },
   {
-    title: 'Project 3',
-    description: 'This is a project',
-    image: imagen,
-    link: 'https://www.google.com'
+    path: 'portfolio',
+    title: 'Portfolio',
+    subTitle: 'Mi portfolio',
+    image: imgPortfolio,
+    description:
+      ' Portfolio personal donde muestro mis proyectos y mi información personal.',
+    technology: ['React', 'Next', 'HTML', 'CSS', 'Framer motion', 'Vercel'],
+    url_vercel: 'https://portfolio-rubenmeju.vercel.app/',
+    url_github: 'https://github.com/RubenMeju/Portfolio'
   },
   {
     title: 'Project 4',
