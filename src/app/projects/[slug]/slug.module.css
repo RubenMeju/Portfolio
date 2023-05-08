@@ -68,6 +68,7 @@
 }
 .links {
   display: flex;
+  margin-bottom: 4rem;
 }
 @media screen and (min-width: 820px) {
   .body {
