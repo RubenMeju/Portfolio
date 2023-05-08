@@ -4,16 +4,25 @@ import imagen from '../../../public/SonGoku.webp'
 
 export const projects = [
   {
+    path: 'tetris',
     title: 'Tetris',
-    description: 'El juego de tetris',
+    subTitle: 'El juego de tetris',
     image: imgTetris,
-    link: 'https://tetris-redux-toolkit.vercel.app/'
+    description: 'El mítico juego de tetris con React y Redux Toolkit',
+    technology: ['React', 'Redux Toolkit'],
+    url_vercel: 'https://tetris-redux-toolkit.vercel.app/',
+    url_github: 'https://github.com/RubenMeju/TetrisReduxToolkit'
   },
   {
+    path: 'movies-api',
     title: 'Movies API',
-    description: 'API de peliculas',
+    subTitle: 'API de peliculas',
     image: imgMovies,
-    link: 'https://movies-api-tmdb.vercel.app/'
+    description:
+      ' API de peliculas y series con la posibilidad de buscar por populares, mejor valoradas, proximos estrenos, etc... además de poder cambiar el idioma entre inglés y español',
+    technology: ['React', 'Vite'],
+    url_vercel: 'https://movies-api-tmdb.vercel.app/',
+    url_github: 'https://github.com/RubenMeju/Movies_API_TMDB'
   },
   {
     title: 'Project 3',
