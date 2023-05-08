@@ -16,7 +16,6 @@
   position: relative;
   width: 250px;
   height: 250px;
-  border-radius: 50%;
   overflow: hidden;
 }
 .img {
@@ -53,7 +52,10 @@
   .body {
     height: 60%;
   }
-
+  .contImage {
+    width: 40vh;
+    height: 40vh;
+  }
   .body {
     display: flex;
     flex-direction: column;

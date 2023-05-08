@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import Image from 'next/image'
 
-import imgYo from '../../public/SonGoku.webp'
+import imgYo from '../../public/yo1.webp'
 
 export default function Home() {
   return (
