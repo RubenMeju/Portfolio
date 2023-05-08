@@ -2,7 +2,7 @@
   width: 100%;
   /* margin: auto;*/
   margin-top: 2rem;
-
+  text-decoration: none;
   background-color: var(--color_blue_light);
   border-radius: 0.5rem;
   overflow: hidden;
