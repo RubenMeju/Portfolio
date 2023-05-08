@@ -40,7 +40,7 @@ export default function Home() {
             Projects
           </Link>
           <Link href='contact' className='btn'>
-            Contact
+            Contact me
           </Link>
         </div>
       </div>

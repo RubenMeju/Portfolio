@@ -21,7 +21,7 @@ export const projects = [
     image: imgMovies,
     description:
       ' API de peliculas y series con la posibilidad de buscar por populares, mejor valoradas, proximos estrenos, etc... además de poder cambiar el idioma entre inglés y español',
-    technology: ['React', 'Vite'],
+    technology: ['Vite', 'React', 'HTML', 'Tailwind CSS', 'Vercel'],
     url_vercel: 'https://movies-api-tmdb.vercel.app/',
     url_github: 'https://github.com/RubenMeju/Movies_API_TMDB'
   },
