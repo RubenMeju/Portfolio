@@ -1,14 +1,22 @@
 'use client'
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import styles from './formContact.module.css'
+import Loader from '../../loader/Loader'
 
 export const FormContact = () => {
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState(false)
+
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setLoading(true)
+    setSuccess(false)
+    setError(false)
 
     emailjs
       .sendForm(
@@ -20,15 +28,21 @@ export const FormContact = () => {
       .then(
         (result) => {
           console.log(result.text)
+          setLoading(false)
+          setSuccess(true)
         },
         (error) => {
           console.log(error.text)
+          setLoading(false)
+          setError(true)
         }
       )
   }
-
+  if (loading) return <Loader />
   return (
     <form className={styles.form} ref={form} onSubmit={sendEmail}>
+      {success && <p className={styles.success}>Email enviado con éxito</p>}
+      {error && <p className={styles.error}>Error al enviar el email</p>}
       <label className={styles.label}>Name</label>
       <input
         className={styles.input}
