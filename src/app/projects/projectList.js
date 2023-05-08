@@ -8,8 +8,9 @@ export const projects = [
     title: 'Tetris',
     subTitle: 'El juego de tetris',
     image: imgTetris,
-    description: 'El mítico juego de tetris con React y Redux Toolkit',
-    technology: ['React', 'Redux Toolkit'],
+    description:
+      'El clásico juego de tetris. Se puede jugar con las flechas del teclado o con los botones de la pantalla.',
+    technology: ['Vite', 'React', 'Redux Toolkit', 'HTML', 'CSS', 'Vercel'],
     url_vercel: 'https://tetris-redux-toolkit.vercel.app/',
     url_github: 'https://github.com/RubenMeju/TetrisReduxToolkit'
   },
