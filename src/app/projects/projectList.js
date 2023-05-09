@@ -11,7 +11,7 @@ export const projects = [
     subTitle: 'El juego de tetris',
     image: imgTetris,
     description:
-      'El clásico juego de tetris. Se puede jugar con las flechas del teclado o con los botones de la pantalla.',
+      'The classic game of Tetris. It can be played using the arrow keys on the keyboard or the buttons on the screen.',
     technology: ['Vite', 'React', 'Redux Toolkit', 'HTML', 'CSS', 'Vercel'],
     url_vercel: 'https://tetris-redux-toolkit.vercel.app/',
     url_github: 'https://github.com/RubenMeju/TetrisReduxToolkit'
@@ -22,7 +22,7 @@ export const projects = [
     subTitle: 'API de peliculas',
     image: imgMovies,
     description:
-      ' API de peliculas y series con la posibilidad de buscar por populares, mejor valoradas, proximos estrenos, etc... además de poder cambiar el idioma entre inglés y español',
+      'Movies and series API with the ability to search by popular, top-rated, upcoming releases, etc., as well as the option to switch between English and Spanish languages.',
     technology: ['Vite', 'React', 'HTML', 'Tailwind CSS', 'Vercel'],
     url_vercel: 'https://movies-api-tmdb.vercel.app/',
     url_github: 'https://github.com/RubenMeju/Movies_API_TMDB'
@@ -33,7 +33,7 @@ export const projects = [
     subTitle: 'Mi portfolio',
     image: imgPortfolio,
     description:
-      ' Portfolio personal donde muestro mis proyectos y mi información personal.',
+      'Personal portfolio where I showcase my projects and information.',
     technology: ['React', 'Next', 'HTML', 'CSS', 'Framer motion', 'Vercel'],
     url_vercel: 'https://portfolio-rubenmeju.vercel.app/',
     url_github: 'https://github.com/RubenMeju/Portfolio'

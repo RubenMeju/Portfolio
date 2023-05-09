@@ -13,6 +13,10 @@
       "icon": "https://cdn.svgporn.com/logos/nextjs.svg"
     },
     {
+      "name": "Vite",
+      "icon": "https://cdn.svgporn.com/logos/vitejs.svg"
+    },
+    {
       "name": "Node.js",
       "icon": "https://cdn.svgporn.com/logos/nodejs.svg"
     },
@@ -96,14 +100,9 @@
       "name": "Adobe Photoshop",
       "icon": "https://cdn.svgporn.com/logos/adobe-photoshop.svg"
     },
-
     {
-      "name": "django",
+      "name": "Django",
       "icon": "https://cdn.svgporn.com/logos/django.svg"
-    },
-    {
-      "name": "Rest Framework",
-      "icon": "https://cdn.svgporn.com/logos/rest-framework.svg"
     },
     {
       "name": "python",
