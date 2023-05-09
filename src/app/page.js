@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import Image from 'next/image'
 
-import imgYo from '../../public/yo.jpg'
+import imgYo from '../../public/yo1.jpg'
 
 export default function Home() {
   return (
