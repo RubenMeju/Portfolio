@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion'
 import StylesButtonBars from './buttonBars.module.css'
 import { useContext } from 'react'
-import { AnimationContext } from '@/app/store/AnimationProvider'
+import { AnimationContext } from '../../../store/AnimationProvider'
 
 const Path = (props) => (
   <motion.path

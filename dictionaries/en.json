@@ -1,0 +1,14 @@
+{
+  "home": {
+    "welcome": "Hey there,",
+    "welcomeMy": "my name is Rubén Yáñez.",
+    "title": " I am a Fullstack Web Developer based in La Coruña, Spain.",
+    "description": "I am a self-taught developer with a passion for learning new things and solving problems. I am currently working as a freelancer, but I am looking for new opportunities to grow as a developer.",
+    "btnProjects": "Projects",
+    "btnContact": "Contact me"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  }
+}

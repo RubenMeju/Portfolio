@@ -1,12 +1,12 @@
 'use client'
 import styles from './header.module.css'
 import Image from 'next/image'
-import iconGithub from '../../../../public/github.svg'
-import iconLinkedin from '../../../../public/linkedin.svg'
+import iconGithub from '../../../../../public/github.svg'
+import iconLinkedin from '../../../../../public/linkedin.svg'
 import { ButtonBars } from '../btnBars/ButtonBars'
 import { useContext } from 'react'
-import { AnimationContext } from '@/app/store/AnimationProvider'
 import Link from 'next/link'
+import { AnimationContext } from '../../../store/AnimationProvider'
 
 export default function Header() {
   const { isOpen, setIsOpen } = useContext(AnimationContext)

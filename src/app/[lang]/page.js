@@ -2,9 +2,13 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import Image from 'next/image'
 
-import imgYo from '../../public/yo1.jpg'
+import imgYo from '../../../public/yo1.jpg'
+import { getDictionary } from '../../../get-dictionary'
+import { Locale } from '../../../i18n-config'
+import LocaleSwitcher from './switchLanguage/locale-switcher'
 
-export default function Home() {
+export default async function Home({ params: { lang } }) {
+  const dictionary = await getDictionary(lang)
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -23,24 +27,23 @@ export default function Home() {
 
       <div className={styles.body}>
         <div>
+          <LocaleSwitcher />
           <h1 className={styles.textIntro}>
-            Hey there,
-            <br /> my name is Rubén Yáñez. <br /> I am a Fullstack Web Developer
-            based in La Coruña, Spain.
+            {dictionary['home'].welcome}
+            <br /> {dictionary['home'].welcomeMy}
+            <br /> {dictionary['home'].title}
           </h1>
           <h3 className={styles.textDescription}>
-            I am a self-taught developer with a passion for learning new things
-            and solving problems. I am currently working as a freelancer, but I
-            am looking for new opportunities to grow as a developer.
+            {dictionary['home'].description}
           </h3>
         </div>
 
         <div className={styles.contLinks}>
           <Link href='projects' className='btn'>
-            Projects
+            {dictionary['home'].btnProjects}
           </Link>
           <Link href='contact' className='btn'>
-            Contact me
+            {dictionary['home'].btnContact}
           </Link>
         </div>
       </div>

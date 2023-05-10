@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './navItems.module.css'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
-import { AnimationContext } from '@/app/store/AnimationProvider'
+import { AnimationContext } from '../../../../store/AnimationProvider'
 
 const pages = [
   {

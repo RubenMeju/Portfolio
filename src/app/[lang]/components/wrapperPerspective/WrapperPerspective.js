@@ -1,7 +1,7 @@
 'use client'
-import { AnimationContext } from '@/app/store/AnimationProvider'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
+import { AnimationContext } from '../../../store/AnimationProvider'
 
 const variants = {
   open: {

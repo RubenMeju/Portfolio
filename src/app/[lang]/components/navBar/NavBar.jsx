@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import styles from './navBar.module.css'
 import NavItems from './navItems/NavItems'
 import { useContext } from 'react'
-import { AnimationContext } from '@/app/store/AnimationProvider'
+import { AnimationContext } from '../../../store/AnimationProvider'
 
 const variants = {
   open: {

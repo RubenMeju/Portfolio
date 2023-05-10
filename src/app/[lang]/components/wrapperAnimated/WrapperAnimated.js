@@ -1,10 +1,10 @@
 'use client'
 
-import { useMediaQuery } from '@/app/hooks/useMediaQuery'
-import { AnimationContext } from '@/app/store/AnimationProvider'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import styles from './wrapperAnimated.module.css'
+import { AnimationContext } from '../../../store/AnimationProvider'
+import { useMediaQuery } from '../../hooks/useMediaQuery'
 
 export const WrapperAnimated = ({ children }) => {
   const { isOpen } = useContext(AnimationContext)
