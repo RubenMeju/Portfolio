@@ -34,9 +34,10 @@ const variants = {
   }
 }
 
-export default function NavItems() {
-  const { isOpen, setIsOpen } = useContext(AnimationContext)
+export default function NavItems({ params }) {
+  console.log('en params', params)
 
+  const { isOpen, setIsOpen } = useContext(AnimationContext)
   return (
     <ul className={styles.ul}>
       {pages.map((page, index) => (
@@ -49,7 +50,7 @@ export default function NavItems() {
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
           <Link
-            href={page.path}
+            href={params.lang + '/' + page.path}
             className={styles.link}
             onClick={() => setIsOpen(!isOpen)}
           >

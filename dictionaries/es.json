@@ -7,8 +7,7 @@
     "btnProjects": "Proyectos",
     "btnContact": "Contáctame"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "holaaaaa"
+  "projects": {
+    "prueba": "hola"
   }
 }

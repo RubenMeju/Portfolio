@@ -1,8 +1,8 @@
-import imgTetris from '../../../public/projectsImages/tetris.webp'
-import imgMovies from '../../../public/projectsImages/moviesAPI.webp'
-import imgPortfolio from '../../../public/projectsImages/portfolio.webp'
+import imgTetris from '../../../../public/projectsImages/tetris.webp'
+import imgMovies from '../../../../public/projectsImages/moviesAPI.webp'
+import imgPortfolio from '../../../../public/projectsImages/portfolio.webp'
 
-import imagen from '../../../public/SonGoku.webp'
+import imagen from '../../../../public/SonGoku.webp'
 
 export const projects = [
   {

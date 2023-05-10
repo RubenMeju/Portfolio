@@ -18,7 +18,8 @@ const variants = {
   }
 }
 
-export default function NavBar() {
+export default function NavBar({ params }) {
+  console.log(JSON.stringify(params))
   const { isOpen } = useContext(AnimationContext)
 
   return (
@@ -29,7 +30,7 @@ export default function NavBar() {
       transition={{ duration: 0.3 }}
       className={styles.nav}
     >
-      <NavItems />
+      <NavItems params={params} />
     </motion.nav>
   )
 }

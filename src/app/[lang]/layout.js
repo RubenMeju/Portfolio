@@ -25,7 +25,7 @@ export default function RootLayout({ children, params }) {
       <body className={inter.className}>
         <AnimationProvider>
           <Header />
-          <NavBar />
+          <NavBar params={params} />
 
           <WrapperAnimated>
             <WrapperPerspective>{children}</WrapperPerspective>
