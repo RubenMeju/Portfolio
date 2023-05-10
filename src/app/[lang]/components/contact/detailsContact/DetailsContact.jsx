@@ -1,14 +1,13 @@
+import { getDictionary } from '../../../../../../get-dictionary'
 import styles from './detailsContact.module.css'
 
-export default function DetailsContact() {
+export default async function DetailsContact({ lang }) {
+  const dictionary = await getDictionary(lang)
   return (
     <section className={styles.section}>
-      <h3 className={styles.subTitle}>Where to find me </h3>
+      <h3 className={styles.subTitle}>{dictionary['contact'].subTitle}</h3>
 
-      <p className={styles.p}>
-        Do you have an interesting project I can help with? Feel free to reach
-        out to me by using one of the following:
-      </p>
+      <p className={styles.p}>{dictionary['contact'].description}</p>
       <ul className={styles.ul}>
         <li className={styles.li}>
           Email:
@@ -37,9 +36,7 @@ export default function DetailsContact() {
           </a>
         </li>
       </ul>
-      <p className={styles.p}>
-        You can also use the contact form on this page.
-      </p>
+      <p className={styles.p}>{dictionary['contact'].postData}</p>
     </section>
   )
 }

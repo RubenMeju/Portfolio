@@ -9,5 +9,15 @@
   },
   "projects": {
     "title": "Fullstack Web Developer Portfolio"
+  },
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Where to find me",
+    "description": "Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:",
+    "postData": "You can also use the contact form on this page.",
+    "name": "Enter your full name...",
+    "email": "Enter your email...",
+    "message": "Enter your message...",
+    "btnSend": "Send"
   }
 }

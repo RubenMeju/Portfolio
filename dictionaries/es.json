@@ -8,6 +8,16 @@
     "btnContact": "Contáctame"
   },
   "projects": {
-    "title": "Portafolio Desarrollador Web Fullstack"
+    "title": "Desarrollador Web Fullstack Portafolio"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subTitle": "Donde encontrarme",
+    "description": "¿Tienes un proyecto interesante en el que pueda ayudar? No dude en ponerse en contacto conmigo utilizando uno de los siguientes:",
+    "postData": "También puede utilizar el formulario de contacto de esta página.",
+    "name": "Ingresa tu nombre completo...",
+    "email": "Introduce tu correo electrónico...",
+    "message": "Escribe tu mensaje...",
+    "btnSend": "Enviar"
   }
 }
