@@ -39,10 +39,10 @@ export default async function Home({ params: { lang } }) {
         </div>
 
         <div className={styles.contLinks}>
-          <Link href='projects' className='btn'>
+          <Link href={lang + '/projects'} className='btn'>
             {dictionary['home'].btnProjects}
           </Link>
-          <Link href='contact' className='btn'>
+          <Link href={lang + '/contact'} className='btn'>
             {dictionary['home'].btnContact}
           </Link>
         </div>

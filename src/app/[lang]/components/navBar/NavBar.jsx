@@ -19,7 +19,6 @@ const variants = {
 }
 
 export default function NavBar({ params }) {
-  console.log(JSON.stringify(params))
   const { isOpen } = useContext(AnimationContext)
 
   return (

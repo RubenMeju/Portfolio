@@ -10,8 +10,7 @@ export default async function Portfolio({ params: { lang } }) {
   return (
     <>
       <div className={styles.header}>
-        <h2>{dictionary['projects'].prueba}</h2>
-        <h1 className={styles.title}>Fullstack Web Developer Portfolio</h1>
+        <h1 className={styles.title}>{dictionary['projects'].title}</h1>
       </div>
       <div className={styles.body}>
         {projects.map((project, index) => (

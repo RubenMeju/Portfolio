@@ -3,6 +3,7 @@ import styles from './navItems.module.css'
 import { motion } from 'framer-motion'
 import { useContext } from 'react'
 import { AnimationContext } from '../../../../store/AnimationProvider'
+import { i18n } from '../../../../../../i18n-config'
 
 const pages = [
   {
@@ -35,8 +36,6 @@ const variants = {
 }
 
 export default function NavItems({ params }) {
-  console.log('en params', params)
-
   const { isOpen, setIsOpen } = useContext(AnimationContext)
   return (
     <ul className={styles.ul}>
