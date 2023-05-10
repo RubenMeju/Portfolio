@@ -4,7 +4,6 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import styles from './formContact.module.css'
 import Loader from '../../loader/Loader'
-import { useTranslation } from '../../../../../../i18n-config'
 
 export const FormContact = async ({ dictionary }) => {
   const [loading, setLoading] = useState(false)

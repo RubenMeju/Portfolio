@@ -11,7 +11,7 @@ export default async function page({ params: { lang } }) {
       <h1 className={styles.title}>{dictionary['contact'].title}</h1>
 
       <div className={styles.container}>
-        <DetailsContact lang={lang} />
+        <DetailsContact dictionary={dictionary} />
         <FormContact dictionary={dictionary} />
       </div>
     </div>

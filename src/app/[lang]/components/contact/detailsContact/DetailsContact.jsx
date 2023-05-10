@@ -1,8 +1,7 @@
 import { getDictionary } from '../../../../../../get-dictionary'
 import styles from './detailsContact.module.css'
 
-export default async function DetailsContact({ lang }) {
-  const dictionary = await getDictionary(lang)
+export default async function DetailsContact({ dictionary }) {
   return (
     <section className={styles.section}>
       <h3 className={styles.subTitle}>{dictionary['contact'].subTitle}</h3>
