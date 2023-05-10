@@ -19,5 +19,13 @@
     "email": "Enter your email...",
     "message": "Enter your message...",
     "btnSend": "Send"
+  },
+
+  "about": {
+    "title": "About Rubén Yañez",
+    "intro": "I am a 36 years old passionate",
+    "profession": "Fullstack Web Developer",
+    "description": "based in La Coruña, Spain who enjoys building software. Very positive and highly motivated person in building beautiful websites, web and mobile applications with a stronger focus on the frontend technologies.",
+    "technologies": "Most used technologies"
   }
 }

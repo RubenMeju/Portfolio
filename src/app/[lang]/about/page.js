@@ -1,23 +1,25 @@
 import Image from 'next/image'
 import styles from './about.module.css'
 import { technologies } from './technologies'
+import { getDictionary } from '../../../../get-dictionary'
 
-export default function page() {
+export default async function page({ params: { lang } }) {
+  const dictionary = await getDictionary(lang)
+
   return (
     <div className={styles.about}>
       <div className={styles.section1}>
-        <h1 className={styles.title}>About Rubén Yañez</h1>
+        <h1 className={styles.title}>{dictionary['about'].title}</h1>
         <p className={styles.p}>
-          I am a 36 years old passionate
-          <strong className={styles.strong}> Fullstack Web Developer </strong>
-          based in La Coruña, Spain who enjoys building software. Very positive
-          and highly motivated person in building beautiful websites, web and
-          mobile applications with a stronger focus on the frontend
-          technologies.
+          {dictionary['about'].intro}
+          <strong className={styles.strong}>
+            {dictionary['about'].profession}
+          </strong>
+          {dictionary['about'].description}
         </p>
       </div>
       <div className={styles.section2}>
-        <h2 className={styles.title}>Most used technologies</h2>
+        <h2 className={styles.title}> {dictionary['about'].technologies}</h2>
         <ul className={styles.ul}>
           {technologies.map((technology) => (
             <li key={technology.name} className={styles.li}>

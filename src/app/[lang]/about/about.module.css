@@ -20,6 +20,9 @@
   color: var(--color_gray);
 }
 .strong {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 1.2rem;
   color: orange;
 }
 .section2 {
