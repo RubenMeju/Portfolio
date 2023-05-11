@@ -1,4 +1,4 @@
-import { getDictionary } from '../../../../get-dictionary'
+import { getDictionary } from '../../../get-dictionary'
 import { FormContact } from '../components/contact/FormContact/FormContact'
 import DetailsContact from '../components/contact/detailsContact/DetailsContact'
 import styles from './contact.module.css'

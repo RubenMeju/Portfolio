@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { i18n } from '../../../i18n-config'
+import { i18n } from '../../i18n-config'
 import Header from './components/header/Header'
 import NavBar from './components/navBar/NavBar'
 import { WrapperAnimated } from './components/wrapperAnimated/WrapperAnimated'

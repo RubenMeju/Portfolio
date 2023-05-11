@@ -2,7 +2,7 @@ import styles from './projects.module.css'
 import Card from '../components/card/Card'
 
 import { projects } from './projectList'
-import { getDictionary } from '../../../../get-dictionary'
+import { getDictionary } from '../../../get-dictionary'
 
 export default async function Portfolio({ params: { lang } }) {
   const dictionary = await getDictionary(lang)

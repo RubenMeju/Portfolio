@@ -1,4 +1,4 @@
-import { getDictionary } from '../../../../../../get-dictionary'
+import { getDictionary } from '../../../../../get-dictionary'
 import styles from './detailsContact.module.css'
 
 export default async function DetailsContact({ dictionary }) {

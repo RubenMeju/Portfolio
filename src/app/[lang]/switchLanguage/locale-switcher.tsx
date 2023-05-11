@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { i18n } from '../../../../i18n-config'
+import { i18n } from '../../../i18n-config'
 import Image from 'next/image'
 import iconSpain from '../../../../public/languages/spain.png'
 import iconUnitedKingdom from '../../../../public/languages/united-kingdom.png'
