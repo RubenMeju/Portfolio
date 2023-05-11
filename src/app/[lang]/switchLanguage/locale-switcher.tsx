@@ -69,7 +69,7 @@ export default function LocaleSwitcher() {
                       href={redirectedPathName(locale)}
                       className={styles.link}
                     >
-                      {locale}
+                      {locale === 'en' ? 'English' : 'Español'}
                     </Link>
                   </li>
                 )
