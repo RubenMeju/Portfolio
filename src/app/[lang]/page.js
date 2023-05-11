@@ -1,11 +1,8 @@
 import Link from 'next/link'
 import styles from './page.module.css'
 import Image from 'next/image'
-
-import imgYo from '../../../public/yo1.jpg'
 import { getDictionary } from '../../../get-dictionary'
-import { Locale } from '../../../i18n-config'
-import LocaleSwitcher from './switchLanguage/locale-switcher'
+import imgYo from '../../../public/yo1.jpg'
 
 export default async function Home({ params: { lang } }) {
   const dictionary = await getDictionary(lang)
@@ -27,7 +24,6 @@ export default async function Home({ params: { lang } }) {
 
       <div className={styles.body}>
         <div>
-          <LocaleSwitcher />
           <h1 className={styles.textIntro}>
             {dictionary['home'].welcome}
             <br /> {dictionary['home'].welcomeMy}

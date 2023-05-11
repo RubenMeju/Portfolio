@@ -7,6 +7,7 @@ import { ButtonBars } from '../btnBars/ButtonBars'
 import { useContext } from 'react'
 import Link from 'next/link'
 import { AnimationContext } from '../../../store/AnimationProvider'
+import LocaleSwitcher from '../../switchLanguage/locale-switcher'
 
 export default function Header() {
   const { isOpen, setIsOpen } = useContext(AnimationContext)
@@ -18,6 +19,11 @@ export default function Header() {
       <div className={styles.containerButton}>
         <ButtonBars />
       </div>
+
+      <div className={styles.language}>
+        <LocaleSwitcher />
+      </div>
+
       <div className={styles.socialIcons}>
         <a href='https://github.com/RubenMeju' target='_blank'>
           <Image src={iconGithub} className={styles.img} alt='Github' />

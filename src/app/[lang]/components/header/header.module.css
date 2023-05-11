@@ -28,7 +28,12 @@
   justify-content: center;
   align-items: center;
 }
-
+.language {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .socialIcons {
   width: 25%;
   height: 100%;

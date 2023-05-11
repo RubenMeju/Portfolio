@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  cursor: pointer;
+}
+
+.ul {
+  position: absolute;
+  top: 4rem;
+  padding: 2rem;
+  background-color: green;
+  list-style: none;
+}
+
+.li {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link {
+  font-size: 1.2rem;
+  color: aliceblue;
+  text-decoration: none;
+}
