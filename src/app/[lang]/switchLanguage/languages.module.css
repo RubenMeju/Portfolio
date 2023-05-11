@@ -1,19 +1,22 @@
 .container {
-  position: relative;
   cursor: pointer;
 }
 
 .ul {
   position: absolute;
   top: 4rem;
-  padding: 2rem;
+  right: 0;
   background-color: green;
   list-style: none;
 }
 
 .li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
+  padding: 1rem;
+  background-color: var(--color_blue_light);
 }
 
 .link {
