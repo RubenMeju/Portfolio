@@ -3,8 +3,8 @@ import { projects } from '../projectList'
 import styles from './slug.module.css'
 import Image from 'next/image'
 
-import iconGithub from '../../../../public/github.svg'
-import iconGoDemo from '../../../../public/goDemo.svg'
+import iconGithub from '../../../../../public/github.svg'
+import iconGoDemo from '../../../../../public/goDemo.svg'
 import Link from 'next/link'
 
 export default function Page({ params }) {

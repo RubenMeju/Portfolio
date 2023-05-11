@@ -14,7 +14,7 @@ export default async function Portfolio({ params: { lang } }) {
       </div>
       <div className={styles.body}>
         {projects.map((project, index) => (
-          <Card key={index} project={project} />
+          <Card key={index} project={project} params={lang} />
         ))}
       </div>
     </>

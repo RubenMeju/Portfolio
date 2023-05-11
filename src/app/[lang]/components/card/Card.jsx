@@ -3,9 +3,9 @@ import Image from 'next/image'
 import styles from './card.module.css'
 import Link from 'next/link'
 
-export default function Card({ project }) {
+export default function Card({ project, params }) {
   return (
-    <Link href={'projects/' + project.path} className={styles.card}>
+    <Link href={params + '/projects/' + project.path} className={styles.card}>
       <div className={styles.cardHeader}>
         <Image
           src={project.image}
