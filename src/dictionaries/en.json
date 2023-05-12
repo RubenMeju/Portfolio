@@ -10,10 +10,18 @@
   "projects": {
     "title": "Fullstack Web Developer Portfolio"
   },
+  "projectsSlug": {
+    "title": "Tecnologies",
+    "subTitle": "Let´s get in touch",
+    "description": "Do you have an interesting project I can help with?",
+    "postData": "Feel free to reach out to me!",
+    "btnProjects": "Projects",
+    "btnContact": "Contact me"
+  },
   "contact": {
     "title": "Contact",
     "subTitle": "Where to find me",
-    "description": "Do you have an interesting project I can help with? Feel free to reach out to me by using one of the following:",
+    "description": "Do you have an interesting project I can help with?",
     "postData": "You can also use the contact form on this page.",
     "name": "Enter your full name...",
     "email": "Enter your email...",

@@ -6,9 +6,11 @@ import Image from 'next/image'
 import iconGithub from '../../../../../public/github.svg'
 import iconGoDemo from '../../../../../public/goDemo.svg'
 import Link from 'next/link'
+import { getDictionary } from '../../../../get-dictionary'
 
 export default async function Page({ params }) {
   const { lang } = params
+  const dictionary = await getDictionary(lang)
   const { projects } = await useListProjects(lang)
   const { slug } = params
   const project = projects.find((project) => project.path === slug)
@@ -45,7 +47,7 @@ export default async function Page({ params }) {
           </div>
 
           <div className={styles.details}>
-            <h2>Technologies</h2>
+            <h2>{dictionary['projectsSlug'].title}</h2>
             <ul className={styles.ul}>
               {technology.map((tech, index) => (
                 <li key={index} className={styles.li}>
@@ -72,15 +74,15 @@ export default async function Page({ params }) {
         </section>
 
         <section className={styles.container2}>
-          <h1>Let`s get in touch</h1>
-          <p>Do you have an interesting project I can help with?</p>
-          <p>Feel free to reach out to me!</p>
+          <h1>{dictionary['projectsSlug'].subTitle}</h1>
+          <p>{dictionary['projectsSlug'].description}</p>
+          <p>{dictionary['projectsSlug'].postData}</p>
           <div className={styles.links}>
             <Link href='projects' className='btn'>
-              Projects
+              {dictionary['projectsSlug'].btnProjects}
             </Link>
             <Link href='contact' className='btn'>
-              Contact me
+              {dictionary['projectsSlug'].btnContact}
             </Link>
           </div>
         </section>
