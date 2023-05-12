@@ -15,7 +15,7 @@ export default function Card({ project, params }) {
         />
       </div>
       <div className={styles.cardBody}>
-        <h3>{project.title}</h3>
+        <h2 className={styles.title}>{project.title}</h2>
         <p>{project.description}</p>
       </div>
     </Link>
