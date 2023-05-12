@@ -27,5 +27,18 @@
     "profession": "Fullstack Web Developer",
     "description": "based in La Coruña, Spain who enjoys building software. Very positive and highly motivated person in building beautiful websites, web and mobile applications with a stronger focus on the frontend technologies.",
     "technologies": "Most used technologies"
+  },
+  "listProjects": {
+    "titleTetris": "Tetris",
+    "subTitleTetris": "The game Tetris",
+    "descriptionTetris": "Tetris game built with React and Redux.",
+
+    "titleMoviesAPI": "Movies API",
+    "subTitleMoviesAPI": "Movies API",
+    "descriptionMoviesAPI": "Movies and series API with the ability to search by popular, top-rated, upcoming releases, etc., as well as the option to switch between English and Spanish languages.",
+
+    "titlePortfolio": "Portfolio",
+    "subTitlePortfolio": "Portfolio ",
+    "descriptionPortfolio": "Portfolio of projects built with React and Redux."
   }
 }

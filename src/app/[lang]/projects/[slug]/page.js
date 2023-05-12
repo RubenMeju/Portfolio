@@ -1,5 +1,5 @@
 import React from 'react'
-import { projects } from '../projectList'
+import { useListProjects } from '../useListProjects'
 import styles from './slug.module.css'
 import Image from 'next/image'
 
@@ -7,7 +7,9 @@ import iconGithub from '../../../../../public/github.svg'
 import iconGoDemo from '../../../../../public/goDemo.svg'
 import Link from 'next/link'
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
+  const { lang } = params
+  const { projects } = await useListProjects(lang)
   const { slug } = params
   const project = projects.find((project) => project.path === slug)
 

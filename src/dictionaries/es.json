@@ -27,5 +27,18 @@
     "profession": "Desarrollador Web Fullstack",
     "description": "con sede en La Coruña, España, que disfruta de la creación de software. Muy positivo y persona altamente motivada en la construcción de hermosos sitios web, web y aplicaciones móviles con un mayor enfoque en la frontend.",
     "technologies": "Tecnologías más utilizadas"
+  },
+  "listProjects": {
+    "titleTetris": "Tetris",
+    "subTitleTetris": "El juego del Tetris",
+    "descriptionTetris": "El clásico juego de Tetris. Se puede jugar usando las flechas del teclado o los botones de la pantalla.",
+
+    "titleMoviesAPI": "Movies API",
+    "subTitleMoviesAPI": "API de películas y series",
+    "descriptionMoviesAPI": "API de películas y series con la capacidad de buscar por lanzamientos populares, mejor calificados, próximos, etc., así como la opción de cambiar entre los idiomas inglés y español",
+
+    "titlePortfolio": "Portfolio",
+    "subTitlePortfolio": "Portafolio de proyectos",
+    "descriptionPortfolio": "Portafolio de proyectos desarrollados por Rubén Yáñez. Se puede ver el código fuente de cada proyecto en GitHub y el sitio web en vivo."
   }
 }
