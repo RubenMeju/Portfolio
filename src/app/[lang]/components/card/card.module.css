@@ -23,6 +23,10 @@
   padding: 1rem;
   color: aliceblue;
 }
+.title {
+  margin-bottom: 1rem;
+  color: orange;
+}
 
 @media screen and (min-width: 820px) {
   .card {
