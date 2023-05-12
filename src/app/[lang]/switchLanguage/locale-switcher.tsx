@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { i18n } from '../../../i18n-config'
@@ -9,10 +9,7 @@ import iconUnitedKingdom from '../../../../public/languages/united-kingdom.png'
 import styles from './languages.module.css'
 
 export default function LocaleSwitcher() {
-  const [language, setLanguage] = useState('')
-  const [loading, setLoading] = useState(true)
   const [open, setOpen] = useState(false)
-
   const pathName = usePathname()
   const redirectedPathName = (locale: string) => {
     if (!pathName) return '/'
@@ -20,7 +17,6 @@ export default function LocaleSwitcher() {
     segments[1] = locale
     return segments.join('/')
   }
-  console.log('pathName', pathName.split('/')[1])
   const languagePath = pathName.split('/')[1]
 
   return (

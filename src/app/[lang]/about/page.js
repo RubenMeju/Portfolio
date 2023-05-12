@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import styles from './about.module.css'
-import { technologies } from './technologies'
 import { getDictionary } from '../../../get-dictionary'
+
+import { technologies } from './technologies'
 
 export default async function page({ params: { lang } }) {
   const dictionary = await getDictionary(lang)

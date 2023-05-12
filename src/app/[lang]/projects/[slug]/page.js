@@ -1,5 +1,5 @@
 import React from 'react'
-import { useListProjects } from '../useListProjects'
+import { useListProjects } from '../../hooks/useListProjects'
 import styles from './slug.module.css'
 import Image from 'next/image'
 
