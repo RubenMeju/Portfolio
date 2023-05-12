@@ -24,3 +24,14 @@
   color: aliceblue;
   text-decoration: none;
 }
+
+@media screen and (min-width: 820px) {
+  .ul {
+    top: initial;
+    right: initial;
+    bottom: 0;
+    left: 4rem;
+    background-color: green;
+    list-style: none;
+  }
+}

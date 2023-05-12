@@ -64,6 +64,9 @@
     height: 75%;
     margin: auto;
   }
+  .language {
+    margin-right: initial;
+  }
   .socialIcons {
     width: 100%;
     height: 15%;
