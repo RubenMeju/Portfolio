@@ -10,19 +10,16 @@
   list-style: none;
 }
 
-.li {
+.link {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
-  background-color: var(--color_blue_light);
-}
-
-.link {
   font-size: 1.2rem;
   color: aliceblue;
   text-decoration: none;
+  background-color: var(--color_blue_light);
 }
 
 @media screen and (min-width: 820px) {

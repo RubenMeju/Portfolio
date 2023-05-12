@@ -20,64 +20,43 @@ export default function LocaleSwitcher() {
     segments[1] = locale
     return segments.join('/')
   }
+  console.log('pathName', pathName.split('/')[1])
+  const languagePath = pathName.split('/')[1]
 
-  useEffect(() => {
-    setLoading(true)
-    setLanguage(pathName)
-
-    if (pathName === '/en') {
-      setLanguage('en')
-      setLoading(false)
-    } else if (pathName === '/es') {
-      setLanguage('es')
-      setLoading(false)
-    }
-  }, [pathName])
   return (
     <>
-      {loading ? (
+      <div className={styles.container}>
         <Image
-          src={iconSpain}
+          src={languagePath === 'en' ? iconUnitedKingdom : iconSpain}
           alt='Spain'
           width={30}
           height={30}
           onClick={() => setOpen(!open)}
         />
-      ) : (
-        <div className={styles.container}>
-          <Image
-            src={language === 'en' ? iconUnitedKingdom : iconSpain}
-            alt='Spain'
-            width={30}
-            height={30}
-            onClick={() => setOpen(!open)}
-          />
 
-          {open ? (
-            <ul className={styles.ul}>
-              {i18n.locales.map((locale) => {
-                return (
-                  <li key={locale} className={styles.li}>
+        {open ? (
+          <ul className={styles.ul}>
+            {i18n.locales.map((locale) => {
+              return (
+                <li key={locale} className={styles.li}>
+                  <Link
+                    href={redirectedPathName(locale)}
+                    className={styles.link}
+                  >
                     <Image
                       src={locale === 'en' ? iconUnitedKingdom : iconSpain}
                       alt={locale === 'en' ? 'United Kingdom' : 'Spain'}
                       width={30}
                       height={30}
                     />
-
-                    <Link
-                      href={redirectedPathName(locale)}
-                      className={styles.link}
-                    >
-                      {locale === 'en' ? 'English' : 'Español'}
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
-          ) : null}
-        </div>
-      )}
+                    {locale === 'en' ? 'English' : 'Español'}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        ) : null}
+      </div>
     </>
   )
 }
