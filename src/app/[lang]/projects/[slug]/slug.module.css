@@ -66,6 +66,10 @@
 .container2 {
   color: var(--color_white);
 }
+
+.paddingBottom {
+  padding-bottom: 0.5rem;
+}
 .links {
   display: flex;
   margin-bottom: 4rem;

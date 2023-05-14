@@ -74,7 +74,9 @@ export default async function Page({ params }) {
         </section>
 
         <section className={styles.container2}>
-          <h1>{dictionary['projectsSlug'].subTitle}</h1>
+          <h1 className={styles.paddingBottom}>
+            {dictionary['projectsSlug'].subTitle}
+          </h1>
           <p>{dictionary['projectsSlug'].description}</p>
           <p>{dictionary['projectsSlug'].postData}</p>
           <div className={styles.links}>
