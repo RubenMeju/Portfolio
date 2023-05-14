@@ -2,7 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import Image from 'next/image'
 import { getDictionary } from '../../get-dictionary'
-import imgYo from '../../../public/yo1.jpg'
+import imgYo from '../../../public/yo.jpg'
 
 export default async function Home({ params: { lang } }) {
   const dictionary = await getDictionary(lang)
