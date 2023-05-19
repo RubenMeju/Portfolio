@@ -3,8 +3,8 @@ export default function robots() {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: '/private/'
     },
-    sitemap: 'https://acme.com/sitemap.xml',
-  };
+    sitemap: 'https://www.rubenyanez.com/sitemap.xml'
+  }
 }
