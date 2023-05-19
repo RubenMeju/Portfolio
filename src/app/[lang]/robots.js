@@ -8,4 +8,3 @@ export default function robots() {
     sitemap: 'https://www.rubenyanez.com/sitemap.xml'
   }
 }
-ZZz
