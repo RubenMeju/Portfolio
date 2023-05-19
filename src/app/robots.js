@@ -5,6 +5,7 @@ export default function robots() {
       allow: '/',
       disallow: '/private/'
     },
-    sitemap: 'https://www.rubenyanez.com/es/sitemap.xml'
+    sitemap: 'https://www.rubenyanez.com/sitemap.xml'
   }
 }
+ZZz
