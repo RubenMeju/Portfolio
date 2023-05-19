@@ -13,7 +13,6 @@ const variants = {
   },
   closed: {
     width: 0,
-
     x: '-100%'
   }
 }
