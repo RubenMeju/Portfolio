@@ -1,19 +1,19 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://www.rubenyanez.com/es',
+      url: 'https://www.rubenyanez.com',
       lastModified: new Date()
     },
     {
-      url: 'https://www.rubenyanez.com/es/projects',
+      url: 'https://www.rubenyanez.com/projects',
       lastModified: new Date()
     },
     {
-      url: 'https://www.rubenyanez.com/es/contact',
+      url: 'https://www.rubenyanez.com/contact',
       lastModified: new Date()
     },
     {
-      url: 'https://www.rubenyanez.com/es/about',
+      url: 'https://www.rubenyanez.com/about',
       lastModified: new Date()
     }
   ]
