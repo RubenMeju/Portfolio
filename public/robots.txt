@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.rubenyanez.com/
-
-# Sitemaps
-Sitemap: https://www.rubenyanez.com/sitemap.xml

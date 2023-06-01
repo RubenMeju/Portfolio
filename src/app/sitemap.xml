@@ -1,0 +1,22 @@
+<url>
+  <loc>https://www.rubenyanez.com/en</loc>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="de"
+    href="https://www.rubenyanez.com/es" />
+  <xhtml:link
+    rel="alternate"
+    hreflang="en"
+    href="https://www.rubenyanez.com/en" />
+</url>
+<url>
+  <loc>https://www.rubenyanez.com/es</loc>
+  <xhtml:link
+    rel="alternate"
+    hreflang="de"
+    href="https://www.rubenyanez.com/es" />
+  <xhtml:link
+    rel="alternate"
+    hreflang="en"
+    href="https://www.rubenyanez.com/en" />
+</url>
