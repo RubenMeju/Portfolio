@@ -9,8 +9,8 @@ export default function Loader() {
     )
   }
   return (
-    <section className={stylesLoader.section}>
+    <div className={stylesLoader.container}>
       <div className={stylesLoader.loader}>{circles}</div>
-    </section>
+    </div>
   )
 }
