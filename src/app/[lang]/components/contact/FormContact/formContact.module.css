@@ -20,13 +20,10 @@
   background-color: var(--color_blue_light);
 }
 
-.success,
 .error {
-  padding: 0.5rem 1rem;
-  font-size: 1.5rem;
-  color: aliceblue;
-  background-color: red;
+  color: rgb(255, 36, 36);
 }
-.success {
-  background-color: green;
+
+.input-error {
+  border-color: rgb(255, 36, 36);
 }

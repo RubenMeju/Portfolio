@@ -113,9 +113,12 @@ export const FormContact = ({ dictionary }) => {
       <form className={styles.form} ref={form} onSubmit={sendEmail}>
         {success && <p className={styles.success}>Email enviado con éxito</p>}
         {error && <p className={styles.error}>Error al enviar el email</p>}
+
         <label className={styles.label}>Name</label>
         <input
-          className={styles.input}
+          className={`${styles.input} ${
+            formErrors.user_name && styles['input-error']
+          }`}
           type='text'
           name='user_name'
           value={formData.user_name}
@@ -123,11 +126,16 @@ export const FormContact = ({ dictionary }) => {
           placeholder={dictionary['contact'].name}
         />
         {formErrors.user_name && (
-          <p className={styles.error}>{formErrors.user_name}</p>
+          <p className={`${styles.error} ${styles['input-error']}`}>
+            {formErrors.user_name}
+          </p>
         )}
+
         <label className={styles.label}>Email</label>
         <input
-          className={styles.input}
+          className={`${styles.input} ${
+            formErrors.user_email && styles['input-error']
+          }`}
           type='email'
           name='user_email'
           value={formData.user_email}
@@ -135,18 +143,25 @@ export const FormContact = ({ dictionary }) => {
           placeholder={dictionary['contact'].email}
         />
         {formErrors.user_email && (
-          <p className={styles.error}>{formErrors.user_email}</p>
+          <p className={`${styles.error} ${styles['input-error']}`}>
+            {formErrors.user_email}
+          </p>
         )}
+
         <label className={styles.label}>Message</label>
         <textarea
-          className={styles.input}
+          className={`${styles.input} ${
+            formErrors.message && styles['input-error']
+          }`}
           name='message'
           value={formData.message}
           onChange={handleInputChange}
           placeholder={dictionary['contact'].message}
         />
         {formErrors.message && (
-          <p className={styles.error}>{formErrors.message}</p>
+          <p className={`${styles.error} ${styles['input-error']}`}>
+            {formErrors.message}
+          </p>
         )}
         <button className='btn' type='submit'>
           {dictionary['contact'].btnSend}
